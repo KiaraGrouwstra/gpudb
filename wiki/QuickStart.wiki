@@ -29,3 +29,7 @@ in test/dbgen directory. You need to generate the plain
 text data.
 
 ===Load SSBM Data===
+The original SSBM data cannot be directly used by our engine.
+The data need to transformed into column-stored data. 
+Enter tools/ directory and execute Make, which will generate
+"gpuDBLoad" to transform the data.
