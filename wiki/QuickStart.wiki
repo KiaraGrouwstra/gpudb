@@ -2,6 +2,7 @@
 
 =GPUDB Start Guide=
 ==System Requirement==
+
 * A linux system with GCC and Python installed.
 * Java 1.6 
 * CUDA toolkit (4.0 or later)
