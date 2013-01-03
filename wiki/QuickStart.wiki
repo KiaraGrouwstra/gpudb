@@ -9,4 +9,4 @@
  * CUDA toolkit (4.0 or later)
 
 ==Source Code==
-You can check out the source code Source
+You can check out the source code [http://code.google.com/p/gpudb/source/checkout here].
