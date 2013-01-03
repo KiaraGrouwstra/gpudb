@@ -20,3 +20,9 @@ The install process only add files inside the source code directory.
 
 If you encounter any errors during this step, make sure you have
 gcc and python installed. You can also report your errors [http://code.google.com/p/ysmart/issues/entry Report]. 
+
+==Data Generation==
+
+===SSBM Data Generation===
+
+===Load SSBM Data===
