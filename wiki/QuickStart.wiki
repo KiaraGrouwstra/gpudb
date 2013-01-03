@@ -10,3 +10,13 @@
 
 ==Source Code==
 You can check out the source code [http://code.google.com/p/gpudb/source/checkout here].
+
+==Install Translator==
+After you check out the source code, execute:
+
+   * python setup.py install
+
+The install process only add files inside the source code directory.
+
+If you encounter any errors during this step, make sure you have
+gcc and python installed. You can also report your errors [http://code.google.com/p/ysmart/issues/entry Report]. 
