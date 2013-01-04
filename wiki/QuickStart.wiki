@@ -35,3 +35,7 @@ Enter tools/ directory and execute Make, which will generate
 "gpuDBLoad" to transform the data.
 
 ==Code Generation==
+
+./translate.py query-file.sql schema-file.schema 
+ * query-file.sql should contain the SQL query you want to translate. Currently the suppported SQL queries are listed in test/ssb_test directory
+ * schema-file.schema is the schema file that describes the data
