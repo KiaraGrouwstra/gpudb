@@ -41,6 +41,6 @@ Usage: *./translate.py query-file.sql schema-file.schema*
  * schema-file.schema is the schema file that describes the data
 
 After executing the aforementioned command, enter result/GPUCODE directory and execute Make, which will generate a executable file
-named "GPUDATABASE". Execute this file will run the query on GPU.
+named "GPUDATABASE". Executing "GPUDATABASE" will run the query on GPU.
 To correctly execute the file, make sure all the column-stored data
 are in the result/GPUCODE directory
