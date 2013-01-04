@@ -36,6 +36,11 @@ Enter tools/ directory and execute Make, which will generate
 
 ==Code Generation==
 
-./translate.py query-file.sql schema-file.schema 
+Usage: *./translate.py query-file.sql schema-file.schema* 
  * query-file.sql should contain the SQL query you want to translate. Currently the suppported SQL queries are listed in test/ssb_test directory
  * schema-file.schema is the schema file that describes the data
+
+After executing the aforementioned command, enter result/GPUCODE directory and execute Make, which will generate a executable file
+named "GPUDATABASE". Execute this file will run the query on GPU.
+To correctly execute the file, make sure all the column-stored data
+are in the result/GPUCODE directory
