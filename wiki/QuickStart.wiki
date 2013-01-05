@@ -32,7 +32,7 @@ text data.
 The original SSBM data cannot be directly used by our engine.
 The data need to be transformed into column-stored data. 
 Enter result/GPUCODE directory and execute "Make loader", which will generate
-"gpuDBLoad" to transform the data.
+"gpuDBLoader" to transform the data.
 
 ==Code Generation==
 
