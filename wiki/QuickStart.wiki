@@ -37,10 +37,12 @@ The data need to be transformed into column-stored data.
 
  * Copy the data generated in the previous step to result/GPUCODE directory
 
- * Enter result/GPUCODE directory and execute "Make loader", which will generate
-"gpuDBLoader" to transform the data.
+ * Enter result/GPUCODE directory and execute "Make loader", which will generate "gpuDBLoader" to transform the data.
 
- * ./gpuDBLoader -l lineorder.tbl -d date.tbl -c customer.tbl -s supplier.tbl - p part.tbl
+ * ./gpuDBLoader -l lineorder.tbl -d date.tbl -c customer.tbl -s supplier.tbl -p part.tbl
+
+The data of a table is stored as a collection of independent files, each of which represents an attribute from the table. The file name is composed as the table name + the index of the attribute in the table.
+
 ==Code Generation==
 
 Usage: *./translate.py query-file.sql schema-file.schema* 
