@@ -9,7 +9,7 @@
  * CUDA toolkit (4.0 or later)
 
 ==Source Code==
-You can check out the source code [http://code.google.com/p/gpudb/source/checkout here].
+You can check out the source codes [http://code.google.com/p/gpudb/source/checkout here].
 
 ==Install Translator==
 After you check out the source code, enter the source directory and execute:
