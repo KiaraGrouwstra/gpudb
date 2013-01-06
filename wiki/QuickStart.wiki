@@ -12,7 +12,7 @@
 You can check out the source code [http://code.google.com/p/gpudb/source/checkout here].
 
 ==Install Translator==
-After you check out the source code, execute:
+After you check out the source code, enter the source directory and execute:
 
    * python setup.py install
 
