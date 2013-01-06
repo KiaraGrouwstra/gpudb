@@ -41,7 +41,10 @@ The data need to be transformed into column-stored data.
 
  * ./gpuDBLoader -l lineorder.tbl -d date.tbl -c customer.tbl -s supplier.tbl -p part.tbl
 
-The data of a table is stored as a collection of independent files, each of which represents an attribute from the table. The file name is composed as the table name (in upper case) + the index of the attribute in the table. For example, the first attribute from table lineorder will be stored in file LINEORDER0. Currently you need to edit load.c if you want to change the table name.
+The data of a table is stored as a collection of independent files, each of which represents an attribute from the table. The file name is composed as the table name (in upper case) + the index of the attribute in the table. For example, the first attribute from table lineorder will be stored in file LINEORDER0. 
+
+Make the table name specified in load.c matches the table name in the schema.
+Currently you need to edit load.c if you want to change the table name.
 
 ==Code Generation==
 
