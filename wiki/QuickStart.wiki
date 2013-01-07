@@ -46,6 +46,8 @@ The data of a table is stored as a collection of independent files, each of whic
 Make the table name specified in load.c matches the table name in the schema.
 Currently you need to edit load.c if you want to change the table name.
 
+===Data Compression===
+
 ==Code Generation==
 
 Usage: *./translate.py query-file.sql schema-file.schema* 
