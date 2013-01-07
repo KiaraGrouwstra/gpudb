@@ -48,7 +48,7 @@ Currently you need to edit load.c if you want to change the table name.
 
 ===Data Compression===
 
- * RLE
+ * RLE. To get a better compression ration, the column that is compressed using RLE scheme should be sorted first.
 
 ==Code Generation==
 
