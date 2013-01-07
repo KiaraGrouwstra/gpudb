@@ -48,6 +48,8 @@ Currently you need to edit load.c if you want to change the table name.
 
 ===Data Compression===
 
+ * RLE
+
 ==Code Generation==
 
 Usage: *./translate.py query-file.sql schema-file.schema* 
