@@ -47,6 +47,10 @@ Make the table name specified in load.c matches the table name in the schema.
 Currently you need to edit load.c if you want to change the table name.
 
 ===Data Compression===
+
+Data can be compressed to get a better query performance. You can skip
+to the next section if you don't need to compress the data.
+
 ====Run Length Encoding====
 
  * Sort. To get a better compression ratio, the column that is compressed using RLE scheme should be sorted first. To sort the column, users can either use the "sort" command to sort the plain text SSBM data on particular columns before transforming the data into column-stored formant, or they can enter result/GPUCODE directory and execute "make sort" to generate a file named "columnSort" that will sort a table on a particular integer column.
