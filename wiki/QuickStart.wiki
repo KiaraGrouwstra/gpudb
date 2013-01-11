@@ -63,8 +63,7 @@ to the next section if you don't need to compress the data.
 
 ====Dictionary Encoding====
 
-    Enter result/GPUCODE and execute "make dict" to generate the file "dictCompression" to
-compress the column using dictionary encoding scheme.
+    Enter result/GPUCODE and execute "make dict" to generate the file "dictCompression" to compress the column using dictionary encoding scheme.
 
     Usage: ./dictCompression inputColumn outputColumn. inputColumn specifies the name of the column to be compressed using dictionary encoding scheme, and outputColumn is the name of the generated compressed column.
 
