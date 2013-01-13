@@ -1,5 +1,7 @@
 #summary Schema Format.
 
+==Introduction==
+
 The schema file is used to check the syntax of the SQL queries and to help generate the C codes to execute the queries on GPU. It is a plain text file, each line of which describes a table structure with the following format:
 
   _tableName_|_columnName_:_type_|_columnName_:_type_|...
@@ -10,6 +12,6 @@ _columnName_:_type_ specifies the name and type of each table column. Currently 
 
 Note that the schema file is case *insensitive*.
 
-Here is an example.
+==Example==
 
 SUPPLIER|S_SUPPKEY:INTEGER|S_NAME:TEXT:25|S_ADDRESS:TEXT:25|S_CITY:TEXT:10|S_NATION:TEXT:15|S_REGION:TEXT:12|S_PHONE:TEXT:15
