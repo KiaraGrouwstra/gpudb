@@ -26,3 +26,5 @@ The above line describes the data format of the supplier table from Star Schema 
  * S_NATION with type Text and length 15.
  * S_REGION with type Text and length 12.
  * S_PHONE with type Text and length 15.
+
+In the source code, we have included an example schema file of Star Schema Benchmark located at test/ssb_test/ssb.schema .
