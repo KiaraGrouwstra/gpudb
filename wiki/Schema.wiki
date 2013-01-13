@@ -8,7 +8,7 @@ The schema file is used to check the syntax of the SQL queries and to help gener
 
 _tableName_ specifies the name of the table.
 
-_columnName_:_type_ specifies the name and type of each table column. Currently we support four data types: *Integer*, *Decimal*, *Date* and *Text*. If the type of the column is Text, another filed needs to be added to illustrate the maximum length of the column. 
+_columnName_:_type_ specifies the name and type of each table column. Currently we support four data types: *Integer*, *Decimal*, *Date* and *Text*. If the type of the column is Text, another filed needs to be added to illustrate the maximum length of the column. This is shown in the following example.
 
 Note that the schema file is case *insensitive*.
 
