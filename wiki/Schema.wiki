@@ -4,4 +4,6 @@ The schema file is used to check the syntax of the SQL queries and to help gener
 
   _tableName_|_columnName_:_type_|_columnName_:_type_|...
 
-_tableName_ specifies the name of the table
+_tableName_ specifies the name of the table.
+
+_columnName_:_type_ specifies the name and type of each table column. Currently we support four data types: *Integer*, *Decimal*, *Date* and *Text*.
