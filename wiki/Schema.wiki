@@ -7,3 +7,9 @@ The schema file is used to check the syntax of the SQL queries and to help gener
 _tableName_ specifies the name of the table.
 
 _columnName_:_type_ specifies the name and type of each table column. Currently we support four data types: *Integer*, *Decimal*, *Date* and *Text*.
+
+Note that the schema file is case *insensitive*.
+
+Here is an example.
+
+SUPPLIER|S_SUPPKEY:INTEGER|S_NAME:TEXT:25|S_ADDRESS:TEXT:25|S_CITY:TEXT:10|S_NATION:TEXT:15|S_REGION:TEXT:12|S_PHONE:TEXT:15
