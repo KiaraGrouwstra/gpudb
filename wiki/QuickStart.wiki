@@ -71,9 +71,9 @@ to the next section if you don't need to compress the data.
 
 Usage: *./translate.py query-file.sql schema-file.schema* 
  * query-file.sql should contain the SQL query you want to translate. Currently the suppported SQL queries are listed in test/ssb_test directory
- * schema-file.schema is the schema file that describes the data
+ * schema-file.schema is the schema file that describes the data. Currently the schema file for star schema benchmark is in test/ssb_test/ssb.schema.
 
-After executing the aforementioned command, enter result/GPUCode directory and execute "Make gpudb", which will generate an executable file
+After executing the aforementioned command, enter result/GPUCODE directory and execute "Make gpudb", which will generate an executable file
 named "GPUDATABASE". Executing "GPUDATABASE" will run the query on GPU.
 To correctly execute the file, make sure all the column-stored data
 are in the result/GPUCode directory
