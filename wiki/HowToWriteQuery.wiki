@@ -1,0 +1,7 @@
+#summary Supported Query Format.
+
+Currently we only support queries that have similar formats as Star Schema Benchmark queries. We have included Star Schema Benchmark queries in the directory test/ssb_test .
+
+When the query has join operations, we assume the first table to be the fact table, and the rest tables to be the dimension tables. For example,
+
+  select * from A, B where A.key = B.key; 
