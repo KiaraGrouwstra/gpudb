@@ -6,4 +6,4 @@ When the query has join operations, we assume the first table to be the fact tab
 
   select A.col, B.col from A, B where A.key = B.key; 
 
-A should be the fact table and B should be the dimension table.
+In the above query, A should be the fact table and B should be the dimension table. If the dimension tables come before fact table, the generated code may not work correctly.
