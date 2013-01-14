@@ -1,3 +1,3 @@
 #summary Introduction of the storage format.
 
-To be finished
+The data are in stored in column format in disk. Each attribute of the table is stored as an independent file in the disk, the name of which is the table name + the index of the attribute in the table. For example, Table A has three attributes. Then the three attributes are stored in the files: A0, A1 and A2.
