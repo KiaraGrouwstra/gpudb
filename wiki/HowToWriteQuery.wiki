@@ -4,4 +4,4 @@ Currently we only support queries that have similar formats as Star Schema Bench
 
 When the query has join operations, we assume the first table to be the fact table, and the rest tables to be the dimension tables. For example,
 
-  select \* from A, B where A.key = B.key; 
+  select ** from A, B where A.key = B.key; 
