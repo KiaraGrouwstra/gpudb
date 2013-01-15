@@ -18,4 +18,6 @@ struct columnHeader{
 
 }}}
 
-For uncompressed columns, the data followed by the colomnHeader are binary representation of the real data. For compressed data, the columnHeader is followed by a compressionHeader which indicates the data compression type and contains information to uncompress the data.
+For uncompressed columns, the colomnHeader is followed by the binary representation of the real data. 
+
+For compressed data, the columnHeader is followed by a compressionHeader which indicates the data compression type and contains information to uncompress the data.
