@@ -20,4 +20,4 @@ struct columnHeader{
 
 For uncompressed columns, the colomnHeader is followed by the binary representation of the real data. 
 
-For compressed data, the columnHeader is followed by a compressionHeader which indicates the data compression type and contains information to uncompress the data.
+For compressed data, the columnHeader is followed by a compressionHeader which indicates the data compression type and contains information to uncompress the data. The structure of compressionHeader depends on the compression type.
