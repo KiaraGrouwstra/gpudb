@@ -7,3 +7,13 @@ The data are in stored in column format in disk. Each attribute of the table is 
 Each attribute file has a column header which denotes the format of the column(whether it is compressed and how it is compressed), and the binary representation of the real data.
 
 <img src="http://www.cse.ohio-state.edu/~yuanyu/files/column.png" witdth=150 height=200>
+
+All the columns, compressed and uncompressed, have the same header structure
+{{{
+
+struct columnHeader{
+        long tupleNum;
+        int format;
+};
+
+}}}
