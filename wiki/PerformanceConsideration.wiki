@@ -23,6 +23,8 @@ In this case, when writing the query, users should take into consideration the t
 ===Compression===
 Compression is an effective technique to improve query performance on GPUs since it can significantly reduce the amount of data transferred through PCIe bus. Refer to StorageFormat to learn the format of the the column. Users can compress the column using different compression schemes. If it is a new added compression scheme, the GPU driver program and the implementation of each query operator need to be modified to support the new compression scheme.
 
+When running queries on the compressed data, try to choose the data that may maximize the query performance. Users may need to manually modify the driver program (driver.cu) such that the query can access the right data.
+
 ===UVA===
 
 ===Invisible Join===
