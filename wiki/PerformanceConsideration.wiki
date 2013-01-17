@@ -1,17 +1,19 @@
 #summary For performance.
 
 ===Query Plan===
-Query execution plan has a large impact on query performance. Currently our tool cannot automatically determine the optimal query execution plan for a given query. Although some optimization techniques like predicate push down have already been adopted to optimize the query plan, it doesn't change the execution sequence of the query operators in the query. For example, considering the following query
+Query execution plan has a large impact on query performance. Currently our tool cannot automatically determine the optimal query execution plan for a given query. Although some optimization techniques like predicate push down have already been adopted to optimize the query plan, it doesn't change the execution sequence of the query operators in the query. For example, considering the following query (q2.1 from Star Schema Benchmark), after the selection operations, the generated query plan by our tool will join lineorder with supplier first, then join the result with part, and finally with ddate.
+
 {{{
    select sum(lo_revenue),d_year,p_brand1
-from lineorder,supplier, part,ddate
-where lo_orderdate = d_datekey
-and lo_partkey = p_partkey
-and lo_suppkey = s_suppkey
-and p_category = 'MFGR#12'
-and s_region = 'AMERICA'
-group by d_year,p_brand1
-order by d_year,p_brand1; 
+   from lineorder,supplier, part,ddate
+   where lo_orderdate = d_datekey
+         and lo_partkey = p_partkey
+         and lo_suppkey = s_suppkey
+         and p_category = 'MFGR#12'
+         and s_region = 'AMERICA'
+         group by d_year,p_brand1
+         order by d_year,p_brand1; 
 }}}
+
 
 In this case, users should manually optimize the query
