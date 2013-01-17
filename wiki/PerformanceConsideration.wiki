@@ -1,6 +1,6 @@
 #summary For performance.
 
-===Query Plan===
+==Query Plan==
 Query execution plan has a large impact on query performance. Currently our tool cannot automatically determine the optimal query execution plan for a given query. Although some optimization techniques like predicate push down have already been adopted to optimize the query plan, it doesn't change the execution sequence of the query operators in the query. For example, considering the following query (q2.1 from Star Schema Benchmark), after the selection operations, the generated query plan by our tool will join lineorder with supplier first, then join the result with part, and finally with ddate. However, the optimal query plan will
 join lineorder with part first, then with supplier, and finally with ddate.
 
@@ -18,3 +18,10 @@ join lineorder with part first, then with supplier, and finally with ddate.
 
 
 In this case, when writing the query, users should take into consideration the table statistics such that the generated query plan is the optimal plan.
+
+==Performance Optimization Techniques==
+===Compression===
+
+===UVA===
+
+===Invisible Join===
