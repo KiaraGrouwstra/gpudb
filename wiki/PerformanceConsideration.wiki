@@ -13,7 +13,7 @@ join lineorder with part first, then with supplier, and finally with ddate.
          and p_category = 'MFGR#12'
          and s_region = 'AMERICA'
          group by d_year,p_brand1
-         order by d_year,p_brand1; 
+         order by d_year,p_brand1;
 }}}
 
 
@@ -21,6 +21,7 @@ In this case, when writing the query, users should take into consideration the t
 
 ==Performance Optimization Techniques==
 ===Compression===
+Compression is an effective technique to improve query performance on GPUs since it can significantly reduce the amount of data transferred through PCIe bus.
 
 ===UVA===
 
