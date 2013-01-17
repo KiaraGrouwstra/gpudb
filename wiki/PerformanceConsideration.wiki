@@ -21,7 +21,7 @@ In this case, when writing the query, users should take into consideration the t
 
 ==Performance Optimization Techniques==
 ===Compression===
-Compression is an effective technique to improve query performance on GPUs since it can significantly reduce the amount of data transferred through PCIe bus.
+Compression is an effective technique to improve query performance on GPUs since it can significantly reduce the amount of data transferred through PCIe bus. Refer to StorageFormat to learn the format of the the column. Users can compress the column using different compression schemes. If it is a new added compression scheme, the GPU driver program and the implementation of each query operator need to be modified to support the new compression scheme.
 
 ===UVA===
 
