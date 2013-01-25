@@ -34,3 +34,6 @@ Currently columns from fact table can utilize UVA. Users can edit XML2MapReduce/
 Invisible join is an optimization technique for star schema joins proposed in the Sigmod'08 paper "Column-Stores vs. Row-Stores: How Different Are They Really". Users can refer to the paper for details.
 
 To best utilize this technique, dimension tables need to be sorted on certain columns and queries need to be rewritten. The tool currently don't support rewriting the queries at run time automatically. Users need to manually rewrite the queries before utilizing this technique.
+
+==GPU Kernel Configuration===
+The GPU kernel configuration, such as the number of threads in a block, and the number of blocks in the grid, need to be tuned on different GPUs.
