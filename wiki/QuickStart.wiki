@@ -23,6 +23,8 @@ gcc and python installed. You can also report your errors [http://code.google.co
 
 ==Data Generation==
 
+Please refer to StorageFormat to get a general idea of the format of the data.
+
 ===SSBM Data Generation===
 The dbgen to generate original SSBM data is located
 in test/dbgen directory. You need to generate the plain
