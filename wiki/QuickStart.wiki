@@ -31,7 +31,7 @@ in test/dbgen directory. You need to generate the plain
 text data.
 
  * Enter test/dbgen directory, and execute "Make"
- * ./dbgen -vfF -t a -s 1 to generate data with scale factor 1
+ * ./dbgen -vfF -T a -s 1 to generate data with scale factor 1
 
 ===Load SSBM Data===
 The original SSBM data cannot be directly used by our engine.
