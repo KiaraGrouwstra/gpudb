@@ -23,7 +23,7 @@ gcc and python installed. You can also report your errors [http://code.google.co
 
 ==Data Generation==
 
-Please refer to StorageFormat to get a general idea of the format of the data. You must ensure that the data are stored in the correct format before running the queries.
+Please refer to StorageFormat to get a general idea of the format of the data. You must ensure that the data are stored in the correct format before running the queries. The following shows how to transform the original SSBM data into our supported storage format. 
 
 ===SSBM Data Generation===
 The dbgen to generate original SSBM data is located
