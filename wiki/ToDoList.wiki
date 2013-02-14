@@ -1,0 +1,5 @@
+#summary To do list.
+
+* Extend the supported query scope
+* support OpenCL
+* Add system support for GPUs
