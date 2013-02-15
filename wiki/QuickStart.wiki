@@ -27,12 +27,18 @@ Please refer to wiki page Schema to learn how to write schema file. An example s
 
 ==Data Generation==
 
-Please refer to StorageFormat to get a general idea of the format of the data. You must ensure that the data are stored in the correct format before running the queries. The following shows how to transform the original SSBM data into our supported storage format. 
+Please refer to StorageFormat to get a general idea of the format of the data. You must ensure that the data are stored in the correct format before running the queries. We provide a tool that can transform the plain text data (columns must be separated by '|') into our supported storage format.
+
+The following shows how to transform the original SSBM data into our supported storage format. 
 
 ===Generate Data Loader===
-Execute ./translate.py schema to generate the loader which will transform plain text data into our supported data format.
 
-===SSBM Data Generation===
+Execute 
+ * ./translate.py schema
+
+to generate the loader which will transform plain text data into our supported data format.
+
+===SSBM Plain Data Generation===
 The dbgen to generate original SSBM data is located
 in test/dbgen directory. You need to generate the plain
 text data. The following steps show how to generate the data with a scale factor of 1.
