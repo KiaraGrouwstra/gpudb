@@ -22,6 +22,7 @@ If you encounter any errors during this step, make sure you have
 gcc and python installed. You can also report your errors [http://code.google.com/p/ysmart/issues/entry Report]. 
 
 ==Describe Schema File==
+
 Please refer to Schema to learn how to write schema file
 
 ==Data Generation==
