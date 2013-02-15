@@ -21,6 +21,9 @@ The install process only add files inside the source code directory.
 If you encounter any errors during this step, make sure you have
 gcc and python installed. You can also report your errors [http://code.google.com/p/ysmart/issues/entry Report]. 
 
+==Describe Schema File==
+Please refer to Schema to learn how to write schema file
+
 ==Data Generation==
 
 Please refer to StorageFormat to get a general idea of the format of the data. You must ensure that the data are stored in the correct format before running the queries. The following shows how to transform the original SSBM data into our supported storage format. 
