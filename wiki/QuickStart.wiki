@@ -54,9 +54,11 @@ The data need to be transformed into column-stored data. The following steps sho
 
  * Copy the data generated in the previous step to result/GPUCODE directory
 
- * Enter result/GPUCODE directory and execute "Make loader", which will generate "gpuDBLoader" to transform the data. gpuDBLoader accepts argument in the format "--table_name table_file". For SSBM, execute the following command to transform the data
+ * Enter result/GPUCODE directory and execute "Make loader", which will generate "gpuDBLoader" to transform the data. 
 
  * ./gpuDBLoader --lineorder lineorder.tbl --ddate date.tbl --customer customer.tbl --supplier supplier.tbl --part part.tbl
+
+Generally speaking, gpuDBLoader accepts arguments in the format "--table_name table_file".
 
 ==Data Compression==
 
