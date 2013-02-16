@@ -29,14 +29,15 @@ Please refer to wiki page Schema to learn how to write schema file. An example s
 
 Please refer to StorageFormat to get a general idea of the format of the data. You must ensure that the data are stored in the correct format before running the queries. We provide a tool that can transform the plain text data (columns must be separated by '|') into our supported storage format.
 
-The following shows how to transform the original SSBM data into our supported storage format. 
-
 ===Generate Data Loader===
 
 Execute 
  * ./translate.py schema
 
 to generate the loader which will transform plain text data into our supported data format.
+
+The following shows how to transform the original SSBM data into our supported storage format. 
+
 
 ===SSBM Plain Data Generation===
 The dbgen to generate original SSBM data is located
@@ -53,11 +54,9 @@ The data need to be transformed into column-stored data. The following steps sho
 
  * Copy the data generated in the previous step to result/GPUCODE directory
 
- * Enter result/GPUCODE directory and execute "Make loader", which will generate "gpuDBLoader" to transform the data.
+ * Enter result/GPUCODE directory and execute "Make loader", which will generate "gpuDBLoader" to transform the data. gpuDBLoader accepts argument in the format "--table_name table_file". For SSBM, execute the following command to transform the data
 
  * ./gpuDBLoader --lineorder lineorder.tbl --ddate date.tbl --customer customer.tbl --supplier supplier.tbl --part part.tbl
-
-Make sure the table name specified in load.c matches the table name in the schema.
 
 ==Data Compression==
 
