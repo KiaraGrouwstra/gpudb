@@ -1,6 +1,5 @@
 #summary To do list.
 
- * improve the usability
+ * Improve the usability
  * Extend the supported query scope
- * Support OpenCL
  * Add system support for GPUs
