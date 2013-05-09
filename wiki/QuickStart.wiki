@@ -52,7 +52,7 @@ text data. The following steps show how to generate the data with a scale factor
 The original SSBM data cannot be directly used by our engine.
 The data need to be transformed into column-stored data. The following steps show how to transform the SSBM data. 
 
- * Copy the data generated in the previous step to src/GPUCODE directory
+ * Copy the data generated in the previous step to src/cuda or src/opencl directory
 
  * Enter src/utility directory and execute "Make loader", which will generate "gpuDBLoader" to transform the data. 
 
@@ -67,17 +67,17 @@ to the next section if you don't need to compress the data.
 
 ====Run Length Encoding====
 
- * Sort. To get a better compression ratio, the column that is compressed using RLE scheme should be sorted first. To sort the column, users can either use the "sort" command to sort the plain text SSBM data on particular columns before transforming the data into column-stored formant, or they can enter src/GPUCODE directory and execute "make sort" to generate a file named "columnSort" that will sort a table on a particular integer column.
+ * Sort. To get a better compression ratio, the column that is compressed using RLE scheme should be sorted first. To sort the column, users can either use the "sort" command to sort the plain text SSBM data on particular columns before transforming the data into column-stored formant, or they can enter src/utility directory and execute "make sort" to generate a file named "columnSort" that will sort a table on a particular integer column.
 
     Usage: ./columnSort inputPrefix outputPrefix index. inputPrefix is the name of the table to be sorted, outputPrefix is the name of the generated sorted table and index specifies the sorted column.
 
- * Compression. Enter src/GPUCODE and execute "make rle" to generate the file "rleCompression" to compress the column using RLE scheme.
+ * Compression. Enter src/utility and execute "make rle" to generate the file "rleCompression" to compress the column using RLE scheme.
 
     Usage: ./rleCompression inputColumn outputColumn. inputColumn specifies the name of the sorted column to be compressed using RLE, and outputColumn is the name of the generated compressed column.
 
 ====Dictionary Encoding====
 
-    Enter src/GPUCODE and execute "make dict" to generate the file "dictCompression" to compress the column using dictionary encoding scheme.
+    Enter src/utility and execute "make dict" to generate the file "dictCompression" to compress the column using dictionary encoding scheme.
 
     Usage: ./dictCompression inputColumn outputColumn. inputColumn specifies the name of the column to be compressed using dictionary encoding scheme, and outputColumn is the name of the generated compressed column.
 
@@ -87,7 +87,7 @@ Usage: *./translate.py query-file.sql schema-file.schema*
  * query-file.sql should contain the SQL query you want to translate. Currently the suppported SQL queries are listed in test/ssb_test directory
  * schema-file.schema is the schema file that describes the data. Currently the schema file for star schema benchmark is in test/ssb_test/ssb.schema.
 
-After executing the aforementioned command, enter src/GPUCODE directory and execute "Make gpudb", which will generate an executable file
+After executing the aforementioned command, enter src/cuda or src/opencl directory and execute "Make gpudb", which will generate an executable file
 named "GPUDATABASE". Executing "GPUDATABASE" will run the query on GPU.
 To correctly execute the file, make sure all the column-stored data
-are in the src/GPUCode directory
+are in the same directory
