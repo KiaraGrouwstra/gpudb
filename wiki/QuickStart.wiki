@@ -6,7 +6,7 @@
 
  * A linux system with GCC (both 32-bit and 64 bit GCC are needed for 64-bit environments) and Python installed.
  * Java 1.6 
- * CUDA toolkit (4.0 or later)
+ * CUDA toolkit (4.0 or later), or AMD APP SDK or Intel OpenCL SDK.
 
 ==Source Code==
 You can check out the source codes [http://code.google.com/p/gpudb/source/checkout here].
