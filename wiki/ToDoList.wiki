@@ -1,5 +1,5 @@
 #summary To do list.
-
- * Improve the usability
- * Extend the supported query scope
- * Add system support for GPUs
+ * Documentation.
+ * Improve the usability.
+ * Extend the supported query scope.
+ * Add system support for GPUs.
