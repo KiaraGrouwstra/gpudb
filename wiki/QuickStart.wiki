@@ -54,7 +54,7 @@ The data need to be transformed into column-stored data. The following steps sho
 
  * Copy the data generated in the previous step to src/GPUCODE directory
 
- * Enter src/GPUCODE directory and execute "Make loader", which will generate "gpuDBLoader" to transform the data. 
+ * Enter src/utility directory and execute "Make loader", which will generate "gpuDBLoader" to transform the data. 
 
  * ./gpuDBLoader --lineorder lineorder.tbl --ddate date.tbl --customer customer.tbl --supplier supplier.tbl --part part.tbl
 
