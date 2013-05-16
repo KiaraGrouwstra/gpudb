@@ -1,5 +1,6 @@
 #summary To do list.
  * Documentation.
  * Improve the usability.
+ * Support more data compression methods.
  * Extend the supported query scope.
  * Add system support for GPUs.
