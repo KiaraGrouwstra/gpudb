@@ -28,7 +28,7 @@ When running queries on the compressed data, try to choose the data that may max
 ===Transfer Overlapping===
 Transfer Overlapping can be adopted to better utilize the PCIe bandwidth and overlap the PCIe transfer with the kernel execution. To utilize this technique, the data need to be stored in the pinned host memory.
 
-Currently columns from fact table can utilize UVA. Users can edit XML2MapReduce/config.py and set UVA to 1 so that the generated codes will use UVA to access the data.
+Users can edit XML2CODE/config.py and set UVA to 1 so that the generated codes will utilize the transfer overlapping technique.
 
 ===Invisible Join===
 Invisible join is an optimization technique for star schema joins proposed in the Sigmod'08 paper "Column-Stores vs. Row-Stores: How Different Are They Really". Users can refer to the paper for details.
