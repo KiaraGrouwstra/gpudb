@@ -25,8 +25,8 @@ Compression is an effective technique to improve query performance on GPUs since
 
 When running queries on the compressed data, try to choose the data that may maximize the query performance. Users may need to manually modify the driver program (driver.cu) such that the query can access the right data.
 
-===UVA===
-CUDA Unified Virtual Addressing (UVA) can be adopted to better utilize the PCIe bandwidth and overlap the PCIe transfer with the kernel execution.
+===Transfer Overlapping===
+Transfer Overlapping can be adopted to better utilize the PCIe bandwidth and overlap the PCIe transfer with the kernel execution. To utilize this technique, the data need to be stored in the pinned host memory.
 
 Currently columns from fact table can utilize UVA. Users can edit XML2MapReduce/config.py and set UVA to 1 so that the generated codes will use UVA to access the data.
 
