@@ -50,13 +50,11 @@ text data. The following steps show how to generate the data with a scale factor
 
 ===Load SSBM Data===
 The original SSBM data cannot be directly used by our engine.
-The data need to be transformed into column-stored data. The following steps show how to transform the SSBM data. 
+The data need to be transformed into column-stored data. The following steps show how to transform the SSBM data. Assume the original SSBM data is in the /data directory.
 
- * Copy the data generated in the previous step to src/cuda or src/opencl directory
+ * Enter src/utility directory and execute "Make loader", which will generate "gpuDBLoader" to transform the original data. 
 
- * Enter src/utility directory and execute "Make loader", which will generate "gpuDBLoader" to transform the data. 
-
- * ./gpuDBLoader --lineorder lineorder.tbl --ddate date.tbl --customer customer.tbl --supplier supplier.tbl --part part.tbl
+ * ./gpuDBLoader --lineorder /data/lineorder.tbl --ddate /data/date.tbl --customer /data/customer.tbl --supplier /data/supplier.tbl --part /data/part.tbl
 
 Generally speaking, gpuDBLoader accepts arguments in the format "--table_name table_file".
 
