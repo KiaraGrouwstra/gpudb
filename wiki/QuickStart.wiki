@@ -5,7 +5,7 @@
 ==System Requirement==
 
  * A linux system with Python installed.
- * CUDA toolkit (4.0 or later), or AMD APP SDK or Intel OpenCL SDK.
+ * CUDA toolkit (4.0 or later), AMD APP SDK or Intel OpenCL SDK installed.
  * NVIDIA GPU, AMD GPU or CPUs that support OpenCL.
 
 ==Source Code==
