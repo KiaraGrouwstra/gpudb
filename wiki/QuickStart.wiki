@@ -4,8 +4,12 @@
 =GPUDB Start Guide=
 
 ==Summary==
-This is a translator that translates a given SQL into CUDA codes (executed on NVIDIA GPUs) or OpenCL codes (executed on devices that support OpenCL). You need to:
-
+This is a translator that translates a given SQL query into CUDA codes (executed on NVIDIA GPUs) or OpenCL codes (executed on devices that support OpenCL). You need to:
+ 
+ # Define the schema and generate the raw text-based data.
+ # Generate the data loader that transform the raw data into our supported data format.
+ # (Optional) Compress the data to obtain better performance.
+ # Translate the SQL query and execute the query.
  
 
 ==System Requirement==
