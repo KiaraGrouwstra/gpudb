@@ -11,9 +11,9 @@
 ==Source Code==
 You can check out the source codes [http://code.google.com/p/gpudb/source/checkout here].
 
-==Generate Schema File==
+==Write Schema File==
 
-Please refer to Schema to learn how to write schema file. An example schema file is located in test/ssb_test/ssb.schema.
+Please refer to wiki page Schema to learn how to write schema file. An example schema file is located in test/ssb_test/ssb.schema.
 
 ==Data Generation==
 
