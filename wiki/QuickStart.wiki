@@ -4,22 +4,12 @@
 =GPUDB Start Guide=
 ==System Requirement==
 
- * A linux system with GCC (both 32-bit and 64 bit GCC are needed for 64-bit environments) and Python installed.
- * Java 1.6 
+ * A linux system with Python installed.
  * CUDA toolkit (4.0 or later), or AMD APP SDK or Intel OpenCL SDK.
+ * NVIDIA GPU, AMD GPU or CPUs that support OpenCL.
 
 ==Source Code==
 You can check out the source codes [http://code.google.com/p/gpudb/source/checkout here].
-
-==Install Translator==
-After you check out the source code, enter the source directory and execute:
-
-   * python setup.py install
-
-The install process only add files inside the source code directory.
-
-If you encounter any errors during this step, make sure you have
-gcc and python installed. You can also report your errors [http://code.google.com/p/ysmart/issues/entry Report]. 
 
 ==Generate Schema File==
 
