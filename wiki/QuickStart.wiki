@@ -11,7 +11,7 @@ This is a translator that translates a given SQL query into CUDA codes (executed
  # (Optional) Compress the data to obtain better performance.
  # Translate the SQL query and execute the query.
  
-The remaining contents will explain each step in details.
+The remaining contents in this guide will explain each step in details.
 
 ==System Requirement==
 
