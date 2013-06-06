@@ -2,6 +2,10 @@
 <wiki:toc max_depth="3" />
 
 =GPUDB Start Guide=
+
+==Summary==
+
+
 ==System Requirement==
 
  * A linux system with Python installed.
@@ -11,7 +15,6 @@
 ==Source Code==
 You can check out the source codes [http://code.google.com/p/gpudb/source/checkout here].
 
-==Summary==
 
 ==Write Schema File==
 
