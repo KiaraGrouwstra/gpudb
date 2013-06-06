@@ -4,7 +4,9 @@
 =GPUDB Start Guide=
 
 ==Summary==
+This is a translator that translates a given SQL into CUDA codes (executed on NVIDIA GPUs) or OpenCL codes (executed on devices that support OpenCL). You need to:
 
+ 
 
 ==System Requirement==
 
