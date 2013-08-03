@@ -12,12 +12,13 @@ This is a translator that translates a given SQL query into CUDA codes (executed
  # Translate the SQL query and execute the query.
  
 The remaining contents in this guide will explain each step in details.
+All the paths used in the following content are relative to the top directory of the source code.
 
 ==System Requirement==
 
- * A linux system with Python installed.
+ * A Linux system with Python installed.
  * CUDA toolkit (4.0 or later), AMD APP SDK or Intel OpenCL SDK installed.
- * NVIDIA GPU, AMD GPU or CPUs that support OpenCL.
+ * NVIDIA GPUs, AMD GPUs or CPUs that support OpenCL.
 
 ==Source Code==
 You can check out the source codes [http://code.google.com/p/gpudb/source/checkout here].
