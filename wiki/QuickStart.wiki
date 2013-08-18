@@ -58,7 +58,7 @@ text data. The following steps show how to generate the data with a scale factor
 
 ===Load SSBM Data===
 The original SSBM data cannot be directly used by our engine.
-The data need to be transformed into column-stored data. The following steps show how to transform the SSBM data. 
+The data need to be transformed into column-stored data. The following steps show how to transform the original SSBM data. 
 
  * Enter src/utility directory and execute "Make loader", which will generate "gpuDBLoader" to transform the original data. 
 
