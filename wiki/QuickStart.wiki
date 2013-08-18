@@ -53,7 +53,7 @@ in test/dbgen directory. You need to generate the plain
 text data. The following steps show how to generate the data with a scale factor of 1.
 
  * Enter test/dbgen directory, and execute "Make"
- * ./dbgen -vfF -T a -s 1 to generate data with scale factor 1
+ * Execute "./dbgen -vfF -T a -s 1" to generate data with scale factor 1
 
 
 ===Load SSBM Data===
