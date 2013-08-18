@@ -35,6 +35,8 @@ Please refer to StorageFormat to get a general idea of the format of the data. Y
 ===Generate Data Loader===
 
 Execute 
+ * ./translate.py your_schema_file to generate a C file that can be used to transform the raw text data into our supported data format. The C file is generated in src/utility/load.c.
+
  * ./translate.py test/ssb_test/ssb.schema
 
 to generate the loader which will transform plain text data into our supported data format.
