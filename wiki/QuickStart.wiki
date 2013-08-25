@@ -94,4 +94,4 @@ Usage: *./translate.py query-file.sql schema-file.schema*
  * schema-file.schema is the schema file that describes the data. Currently the schema file for star schema benchmark is in test/ssb_test/ssb.schema.
 
 After executing the aforementioned command, enter src/cuda or src/opencl directory and execute "Make gpudb", which will generate an executable file
-named "GPUDATABASE". Executing "GPUDATABASE --datadir dir" will run the query on GPU. The "datadir" argument specifies where the data are stored.
+named "GPUDATABASE". Executing "./GPUDATABASE --datadir dir" will run the query on GPU. The "datadir" argument specifies where the data are stored.
