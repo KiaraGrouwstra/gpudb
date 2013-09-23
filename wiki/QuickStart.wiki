@@ -52,7 +52,7 @@ The dbgen to generate original SSBM data is located
 in test/dbgen directory. You need to generate the plain
 text data. The following steps show how to generate the data with a scale factor of 1.
 
- * Enter test/dbgen directory, and execute "Make"
+ * Enter test/dbgen directory, and execute "make"
  * Execute "./dbgen -vfF -T a -s 1" to generate data with scale factor 1
 
 
@@ -60,7 +60,7 @@ text data. The following steps show how to generate the data with a scale factor
 The original SSBM data cannot be directly used by our engine.
 The data need to be transformed into column-stored data. The following steps show how to transform the original SSBM data. 
 
- * Enter src/utility directory and execute "Make loader", which will generate "gpuDBLoader" to transform the original data. 
+ * Enter src/utility directory and execute "make loader", which will generate "gpuDBLoader" to transform the original data. 
 
  * To load data for the previously generated SSBM data, execute the following command: ./gpuDBLoader --lineorder ../../test/dbgen/lineorder.tbl --ddate ../../test/dbgen/date.tbl --customer ../../test/dbgen/customer.tbl --supplier ../../test/dbgen/supplier.tbl --part ../../test/dbgen/part.tbl
 
